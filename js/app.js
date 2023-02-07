@@ -8,30 +8,12 @@ let numeriPari = numeroUtente % 2;
 let numeriDispari = []
 
 
-while (numeriDispari <= 10){
+while (numeriDispari.length <= 10){
+    numeroUtente = parseInt(prompt('Inserisci un numero'));     
     
-    if (isNaN(numeroUtente) || numeroUtente % 2 === 0){
-        let numeroUtente = parseInt(prompt('Inserisci un numero'));     
-    }else (numeroUtente === numeriDispari)
-    numeriDispari.push(numeroUtente) 
+    if (!isNaN(numeroUtente) && numeroUtente % 2 !== 0){
+        numeriDispari.push(numeroUtente) 
+    }
 }
-
-
-
-
-
-
-
-
-// while (isNaN(numeroUtente) || numeroUtente % 2 === 0) {
-//     numeroUtente = parseInt(prompt('Inserisci un numero'));
-//     console.log(numeroUtente)
-
-//     if (numeriDispari[i] <= 10){
-
-//     }
-//     console.log('numero dispari', numeriDispari)
-// }
-
 
 console.log(numeriDispari)
